@@ -1,0 +1,18 @@
+sequenceDiagram
+    Client->>+Server: HTTP post with plain text
+    Server-->>Client: HTTP get for the text field and "save"-button
+    Server-->>Client: HTTP get for css
+    Server-->>Client: HTTP get for js
+    Server-->>Client: HTTP get for the updated json with the data that was sent with the post
+
+
+
+
+
+
+
+
+
+sequenceDiagram
+	Server->>+Client: When the site is loaded, the latest data is received with HTTP get.
+	Client->>+Server: The new data is created and updated with JS and then sent to then server with HTTP post.
